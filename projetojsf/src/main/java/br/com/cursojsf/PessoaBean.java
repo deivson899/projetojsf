@@ -4,6 +4,7 @@ package br.com.cursojsf;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 
@@ -38,6 +39,7 @@ public class PessoaBean {
 		return "";
 	}
 	
+	@PostConstruct
 	public void carregarPessoas() {
 		pessoas = daoGeneric.getListEntity(Pessoa.class);
 	}
