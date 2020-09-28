@@ -30,7 +30,7 @@ public class Pessoa implements Serializable {
 	
 	private String[] frameworks;
 	
-	private Boolean ativo;
+	private boolean ativo;
 	
 	@Temporal(TemporalType.DATE)
 	private Date dataNascimento;
@@ -39,12 +39,12 @@ public class Pessoa implements Serializable {
 		
 	}
 	
-	public void setAtivo(Boolean ativo) {
+	public void setAtivo(boolean ativo) {
 		this.ativo = ativo;
 	}
 	
 	
-	public Boolean getAtivo() {
+	public boolean getAtivo() {
 		return ativo;
 	}
 
